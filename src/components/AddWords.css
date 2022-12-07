@@ -1,0 +1,21 @@
+.words-input {
+    margin: auto;
+    width: 300px;
+    padding:30px; 
+    color: rgb(245, 0, 0);
+}
+
+.button1 {
+  background-color: #EA4C89;
+  border-radius: 6px;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-size: 14px;
+  height: 30px;
+  padding: 6px 10px;
+}
+
+.button1:hover,
+.button1:focus {
+  background-color: #F082AC;
+}
