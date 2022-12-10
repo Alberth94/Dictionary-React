@@ -1,17 +1,16 @@
-
 import './App.css';
 import AddWords from './components/AddWords';
 import SearchWords from './components/SearchWords';
-import React from 'react';
+import React, { useState } from 'react';
 
 function App() {
-  const allWords = [];
+  const [wordToList, setWordToList] = useState('');
 
   return (
     <div>
       <h1>Dictionary</h1>
-      <AddWords list={allWords} />
-      <SearchWords list={allWords} />
+      <AddWords wordToList={wordToList} setWordToList ={setWordToList} />
+      <SearchWords listOfWords={wordToList} />
     </div>
   );
 }
