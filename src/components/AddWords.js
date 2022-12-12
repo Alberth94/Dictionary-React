@@ -7,7 +7,7 @@ const AddWords = ({wordToList, setWordToList}) => {
 
     const wordInList = () => {
         if (!wordToList.includes(word) && word !== "") {
-            setWordToList(wordToList.concat(word));
+            setWordToList([...wordToList, word]);
             setDisplayMessage('The word "' + word + '", was successfully added to the dictionary.')
             setWord('');
         } else if (wordToList.includes(word) && word !== "") {
